@@ -1,0 +1,52 @@
+{
+  "name": "assignment-19-social-media",
+  "version": "1.0.0",
+  "description": "Social media backend - Assignment 19",
+  "imports": {
+    "#config": "./src/config.js",
+    "#controllers/*": "./src/controllers/*.js",
+    "#errors/*": "./src/errors/*.js",
+    "#lib/*": "./src/lib/*.js",
+    "#middlewares/*": "./src/middlewares/*.js",
+    "#models/*": "./src/models/*.js",
+    "#routes/*": "./src/routes/*.js",
+    "#services/*": "./src/services/*.js",
+    "#data/*": "./src/data/*.js"
+  },
+  "main": "main.js",
+  "scripts": {
+    "dev": "nodemon src/main.js",
+    "start": "node src/main.js",
+    "check": "node --check src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sosyfy/express-rest-api-template.git"
+  },
+  "keywords": [
+    "express",
+    "rest"
+  ],
+  "author": "Sospeter Karanja",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sosyfy/express-rest-api-template/issues"
+  },
+  "homepage": "https://github.com/sosyfy/express-rest-api-template#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.3",
+    "morgan": "^1.10.0",
+    "validator": "^13.7.0",
+    "socket.io": "^4.8.1"
+  }
+}

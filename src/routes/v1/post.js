@@ -1,0 +1,11 @@
+const router=require('express').Router();const c=require('../../controllers/post');const v=require('../../middlewares/verifyToken');
+router.get('/news-feed',v,c.newsFeed);
+router.get('/profile/:userId',v,c.profilePosts);
+router.get('/:id',v,c.getPost);
+router.post('/',v,c.createPost);
+router.put('/:id',v,c.updatePost);
+router.delete('/:id',v,c.deletePost);
+router.delete('/:id/hard',v,c.hardDeletePost);
+router.put('/:id/reaction',v,c.reactToPost);
+router.delete('/:id/reaction',v,c.removeReaction);
+module.exports=router;
